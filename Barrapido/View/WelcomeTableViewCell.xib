@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="WelcomeTableViewCell" customModule="Barrapido" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vab-iM-Xhs" customClass="CardView" customModule="Barrapido" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="118"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-dk-DMK">
+                                <rect key="frame" x="5" y="15" width="303" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH8-0p-P2F">
+                                        <rect key="frame" x="91" y="0.0" width="121.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" red="0.28446696040000002" green="0.035461787039999998" blue="0.68859057739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order is almost being delivered! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW8-FM-cJW">
+                                        <rect key="frame" x="1" y="40.5" width="301" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.2275187535" green="0.033076652960000001" blue="0.54445590099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-rT-0u5" customClass="PaddingLabel" customModule="Barrapido" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="70" width="283" height="20"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Hi">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="8" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="34.599998474121094">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DW8-FM-cJW" firstAttribute="leading" secondItem="lgx-dk-DMK" secondAttribute="leading" constant="1" id="5QC-b6-nhE"/>
+                                    <constraint firstAttribute="trailing" secondItem="DW8-FM-cJW" secondAttribute="trailing" constant="1" id="AMF-oA-i62"/>
+                                    <constraint firstItem="EaJ-rT-0u5" firstAttribute="leading" secondItem="lgx-dk-DMK" secondAttribute="leading" constant="10" id="Hv0-BF-Mb1"/>
+                                    <constraint firstAttribute="trailing" secondItem="EaJ-rT-0u5" secondAttribute="trailing" constant="10" id="con-d9-oQa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lgx-dk-DMK" firstAttribute="leading" secondItem="vab-iM-Xhs" secondAttribute="leading" constant="5" id="UFh-ct-PGP"/>
+                            <constraint firstItem="lgx-dk-DMK" firstAttribute="top" secondItem="vab-iM-Xhs" secondAttribute="top" constant="15" id="UsP-Mo-HsV"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="118" id="fuZ-D2-roY"/>
+                            <constraint firstAttribute="trailing" secondItem="lgx-dk-DMK" secondAttribute="trailing" constant="5" id="vaP-xG-dxB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.70689814139999996" green="0.53337469780000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vab-iM-Xhs" secondAttribute="trailing" id="1GS-gy-C1e"/>
+                    <constraint firstItem="vab-iM-Xhs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4ES-U1-LHI"/>
+                    <constraint firstItem="vab-iM-Xhs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Df9-Km-UvC"/>
+                    <constraint firstAttribute="bottom" secondItem="EaJ-rT-0u5" secondAttribute="bottom" constant="18.5" id="gJD-z8-w1j"/>
+                    <constraint firstAttribute="bottom" secondItem="vab-iM-Xhs" secondAttribute="bottom" constant="5.5" id="v0A-JM-ZBf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="welcomeCell"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="welcomeLabel" destination="EaJ-rT-0u5" id="Y8E-Ah-meu"/>
+            </connections>
+            <point key="canvasLocation" x="47.200000000000003" y="84.557721139430285"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -26,6 +26,10 @@
 		9A08CF5F21A65DC200B95F3B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08CF5E21A65DC200B95F3B /* JSONParser.swift */; };
 		9A08CF6121A7122600B95F3B /* SessionkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08CF6021A7122600B95F3B /* SessionkeyService.swift */; };
 		9A08CF6321A85A9900B95F3B /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08CF6221A85A9900B95F3B /* AppDelegate+Extension.swift */; };
+		9A78CA9721B3D06000FA36AE /* BRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78CA9621B3D06000FA36AE /* BRHomeViewController.swift */; };
+		9A78CA9B21B3DF0500FA36AE /* WelcomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78CA9921B3DF0500FA36AE /* WelcomeTableViewCell.swift */; };
+		9A78CA9C21B3DF0500FA36AE /* WelcomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A78CA9A21B3DF0500FA36AE /* WelcomeTableViewCell.xib */; };
+		9A78CA9E21B4451500FA36AE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78CA9D21B4451500FA36AE /* CardView.swift */; };
 		9ABF3F9821AB100100244444 /* LocationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF3F9721AB100100244444 /* LocationDataService.swift */; };
 		9ABF3F9B21ABAA5C00244444 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF3F9A21ABAA5C00244444 /* LocationData.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +70,10 @@
 		9A08CF6221A85A9900B95F3B /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		9A08CF6421A992BD00B95F3B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		9A08CF6521A992BD00B95F3B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9A78CA9621B3D06000FA36AE /* BRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRHomeViewController.swift; sourceTree = "<group>"; };
+		9A78CA9921B3DF0500FA36AE /* WelcomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTableViewCell.swift; sourceTree = "<group>"; };
+		9A78CA9A21B3DF0500FA36AE /* WelcomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTableViewCell.xib; sourceTree = "<group>"; };
+		9A78CA9D21B4451500FA36AE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9ABF3F9721AB100100244444 /* LocationDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataService.swift; sourceTree = "<group>"; };
 		9ABF3F9A21ABAA5C00244444 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +120,7 @@
 				9A08CF2221A330D800B95F3B /* AppDelegate.swift */,
 				9A08CF6221A85A9900B95F3B /* AppDelegate+Extension.swift */,
 				9A08CF4521A3B58500B95F3B /* ViewController */,
+				9A78CA9821B3DEC100FA36AE /* View */,
 				9A08CF5821A64DAB00B95F3B /* Services */,
 				9A08CF4921A57E9700B95F3B /* Network */,
 				9A08CF5D21A65DAC00B95F3B /* Parser */,
@@ -139,6 +148,7 @@
 			children = (
 				9A08CF4621A57DB300B95F3B /* InitialSetupViewController.swift */,
 				9A08CF2421A330D800B95F3B /* ScanQRCodeViewController.swift */,
+				9A78CA9621B3D06000FA36AE /* BRHomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -197,6 +207,16 @@
 				9A08CF5E21A65DC200B95F3B /* JSONParser.swift */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		9A78CA9821B3DEC100FA36AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A78CA9921B3DF0500FA36AE /* WelcomeTableViewCell.swift */,
+				9A78CA9A21B3DF0500FA36AE /* WelcomeTableViewCell.xib */,
+				9A78CA9D21B4451500FA36AE /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9ABF3F9921ABAA3800244444 /* Model */ = {
@@ -288,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A78CA9C21B3DF0500FA36AE /* WelcomeTableViewCell.xib in Resources */,
 				9A08CF3021A330DB00B95F3B /* LaunchScreen.storyboard in Resources */,
 				9A08CF2D21A330DB00B95F3B /* Assets.xcassets in Resources */,
 				9A08CF2821A330D800B95F3B /* Main.storyboard in Resources */,
@@ -315,11 +336,14 @@
 				9A08CF6121A7122600B95F3B /* SessionkeyService.swift in Sources */,
 				9A08CF5F21A65DC200B95F3B /* JSONParser.swift in Sources */,
 				9A08CF2521A330D800B95F3B /* ScanQRCodeViewController.swift in Sources */,
+				9A78CA9721B3D06000FA36AE /* BRHomeViewController.swift in Sources */,
 				9A08CF4721A57DB300B95F3B /* InitialSetupViewController.swift in Sources */,
 				9ABF3F9821AB100100244444 /* LocationDataService.swift in Sources */,
 				9ABF3F9B21ABAA5C00244444 /* LocationData.swift in Sources */,
 				9A08CF5521A5DA6200B95F3B /* Reachability.swift in Sources */,
+				9A78CA9B21B3DF0500FA36AE /* WelcomeTableViewCell.swift in Sources */,
 				9A08CF5021A5A3D600B95F3B /* Error.swift in Sources */,
+				9A78CA9E21B4451500FA36AE /* CardView.swift in Sources */,
 				9A08CF6321A85A9900B95F3B /* AppDelegate+Extension.swift in Sources */,
 				9A08CF5A21A64EAF00B95F3B /* RegisterDeviceService.swift in Sources */,
 				9A08CF5721A5DF0B00B95F3B /* Util.swift in Sources */,

@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Your order is almost being delivered! "; ObjectID = "1Dh-Lk-Rbg"; */
+"1Dh-Lk-Rbg.text" = "Your order is almost being delivered! ";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "46S-ly-PP3"; */
+"46S-ly-PP3.text" = "Welcome!";
+
+/* Class = "UIButton"; normalTitle = "SCAN A QR-CODE"; ObjectID = "OWp-ok-P7I"; */
+"OWp-ok-P7I.normalTitle" = "SCAN A QR-CODE";
+
+/* Class = "UILabel"; text = "In a new place?"; ObjectID = "q0l-Tg-GZf"; */
+"q0l-Tg-GZf.text" = "In a new place?";
+
+/* Class = "UINavigationItem"; title = "Barrapido"; ObjectID = "tPJ-J4-rbO"; */
+"tPJ-J4-rbO.title" = "Barrapido";
